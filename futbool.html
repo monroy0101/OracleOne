@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programa para calcular los puntos de un equipo de fotball</title>
+</head>
+<body>
+<h1>Programa para calcular puntos de un equipo de fotball</h1>
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br><br><br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("Informe la cantidad de empates"));
+    var numero = 10;
+    var puntosTotal = (victorias * 3) + empates;
+
+    
+    if (puntosTotal > 28){
+
+    imprimir("El equipo esta mejor que el año pasado: " + puntosTotal);
+    
+    }
+    if (puntosTotal < 28){
+    
+    imprimir("El equipo esta peor que el año pasado: " + puntosTotal);
+    }
+    if (puntosTotal == 28){
+    
+    imprimir("El equipo esta igual que el año pasado: " + puntosTotal);
+    }
+
+if(numero >= 2 && numero < 12) {
+    alert("ENTRÓ!");
+}
+  
+</script>
+</body>
+</html>
